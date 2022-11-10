@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+    <button><strong>Mygtukas 1</strong></button><br>
+    <input value="Mygtukas 2" /><br>
+    <select size="2" name="cars">
+        <option>Volvo</option>
+        <option>BMW</option>
+        <option>Audi</option>
+        <option>Toyota</option>
+    </select>
+        <input type="color">
+        <input type="text" value="Matas" readonly disabled/> <br>
+        <label for="password">Enter your password:</label><br>
+        <input type="password" placeholder="Password" /><br>
+        <input type="text" step="5"/><br>
+        <input type="text" placeholder="Vardas" required/><br>
+        <input type="text" placeholder="Pavarde" autocomplete="on"/><br>
+        <input type="email" placeholder="E. pastas" autocomplete="off"/><br>
+        <label for="checkbox">Prisiminti mane</label>
+        <input type="checkbox"><br>
+        <button type="submit">Submit</button><br> -->
+
+    </form>
+    <form action="https://formspree.io/f/mqkjwwbq" method="POST">
+    <fieldset>
+    <h1>Payment form</h1>
+    Required fields are follwed by *
+    <h2>Contact infomation</h2> 
+    <form>
+        <fieldset>
+            <legend>Title</legend>
+                <input type="radio" name="lytis" value="Mister">
+                <label for="Lytis">Mister</label> <br>
+                <input type="radio" name="lytis" value="Miss">
+                <label for="Lytis">Miss</label>
+        </fieldset>
+<br>
+    <label for="name">Name:*</label>
+    <input type="text" name="name" required> <br>
+<br>
+    <label for="email">E-mail:*</label>
+    <input type="email" name="email" required><br>
+<br>
+    <label for="password">Password:*</label>
+    <input type="password" name="password" required> <br>
+<br>
+    <h1>Payment information</h1>
+    <label for="cardtype">Card type:*</label>
+    <input type="dropdown" name="cardtype" required>
+    <select>
+        <option>Visa</option>
+        <option>Mastercards</option>
+    </select><br>
+<br>
+    <label for="card">Card number:*</label>
+    <input type="number" name="card" required><br>
+<br>
+    <input type="date" required>Expiration date:* <br>
+    <i>formatted as <mm><yy></yy></i><br>
+        <br>
+        <button type="submit">Validate the payment</button>
+
+    </form>
+    </fieldset>
+
+</body>
+</html>

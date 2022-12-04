@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<form action="https://formspree.io/f/mwkzaabd" method="POST">
+			<h1>Payment form</h1>
+			<p>Required fields are followed by <span>*</span>.</p>
+			<h2>Contact information</h2>
+			<table>
+				<tr>
+					<td></td>
+					<td>
+						<fieldset>
+							<legend>Title</legend>
+							<div>
+								<input
+									type="radio"
+									id="mister_radio"
+									name="title_radio"
+									value="Mister"
+								/>
+								<label for="mister_radio">Mister</label>
+							</div>
+							<div>
+								<input
+									type="radio"
+									id="miss_radio"
+									name="title_radio"
+									value="Miss"
+								/>
+								<label for="mister_radio">Miss</label>
+							</div>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="name_input">Name: <span>*</span> </label>
+					</td>
+					<td class="contact_info_inputs">
+						<input id="name_input" type="text" required />
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="email_input">Email: <span>*</span></label>
+					</td>
+					<td class="contact_info_inputs">
+						<input id="email_input" type="email" required />
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="password_input">Password: <span>*</span></label>
+					</td>
+					<td class="contact_info_inputs">
+						<input id="password_input" type="password" required />
+					</td>
+				</tr>
+			</table>
+
+			<h2>Payment information</h2>
+
+			<table>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="card_type_select">Card type: </label>
+					</td>
+					<td class="contact_info_inputs">
+						<select name="card_type_select" id="card_type_select">
+							<option>Visa</option>
+							<option>Mastercard</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="card_number_input">Card number: <span>*</span></label>
+					</td>
+					<td class="contact_info_inputs">
+						<input id="card_number_input" type="text" maxlength="16" required />
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<label for="expiration_date_input"
+							>Expiration date: <span>*</span></label
+						>
+					</td>
+					<td class="contact_info_inputs">
+						<input
+							name="expiration_date"
+							id="expiration_date_input"
+							type="text"
+							required
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="contact_info_labels">
+						<p>formatted as mm/yy</p>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<button type="submit">Validate the payment</button>
+		</form>
+	</body>
+</html>
